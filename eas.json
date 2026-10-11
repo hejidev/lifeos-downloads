@@ -1,0 +1,18 @@
+{
+    "cli": {
+      "version": ">= 16.0.0",
+      "appVersionSource": "remote"
+    },
+    "build": {
+      "preview": {
+        "distribution": "internal",
+        "autoIncrement": true,
+        "android": { "buildType": "apk" },
+        "env": { "EXPO_PUBLIC_API_URL": "https://api.lifeos.com.ng/api" }
+      },
+      "production": {
+        "autoIncrement": true,
+        "env": { "EXPO_PUBLIC_API_URL": "https://api.lifeos.com.ng/api" }
+      }
+    }
+  }

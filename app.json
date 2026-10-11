@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "LifeOS Staff",
+    "slug": "lifeos-staff",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ng.com.lifeos.staff"
+    },
+    "android": {
+      "package": "ng.com.lifeos.staff",
+      "adaptiveIcon": {
+        "backgroundColor": "#6366F1",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow LifeOS Staff to access your camera to scan product barcodes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00c45e27-2cb1-4f21-879d-6ff3d93f2bb7"
+      }
+    },
+    "owner": "hejidev"
+  }
+}
